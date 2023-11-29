@@ -22,7 +22,7 @@
   /* Font family */
   --font-family: "Poppins", sans-serif;
 
-  /* Font weigths */
+  /* Font weights */
   --Regular-Italic: 400;
   --Bold: 700;
   --ExtraBold-Italic: 800;
@@ -52,6 +52,7 @@ body {
   justify-content: start;
   align-items: center;
   padding: 1em;
+  width: 100%;
 }
 
 .input-item {
@@ -83,11 +84,13 @@ body {
   font-style: italic;
   display: none;
 }
+
 .divider {
   position: relative;
   padding: 1em;
   width: 90%;
 }
+
 hr.solid {
   border-top: 1px solid #bbb;
 }
@@ -95,6 +98,7 @@ hr.solid {
 .icon {
   position: absolute;
   right: 0;
+  transform: none;
   top: -30px;
   background-color: var(--Purple);
   width: 100px;
@@ -116,19 +120,69 @@ hr.solid {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 1em;
+  gap: 1em;
 }
 
 .age-result span {
-    color: var(--Purple);
-    font-size: 50px;
-    font-weight: var(--ExtraBold-Italic);
+  color: var(--Purple);
+  font-size: 50px;
+  font-weight: var(--ExtraBold-Italic);
 }
 
 .year-result h2,
 .month-result h2,
-.days-result h2{
-    font-size: 54px;
-    font-weight: var(--ExtraBold-Italic);
-    font-style: italic;
+.days-result h2 {
+  font-size: 84px;
+  font-weight: var(--ExtraBold-Italic);
+  font-style: italic;
+}
+
+@media screen and (max-width: 750px) {
+  hr.solid {
+    width: 100%;
+  }
+  .divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon {
+    right: 50%;
+    transform: translateX(50%);
+    width: 60px;
+    height: 60px;
+    top: -5px;
+  }
+
+  .icon img {
+    width: 30px;
+    height: 30px;
+  }
+  .year-result h2,
+  .month-result h2,
+  .days-result h2 {
+    font-size: 55px;
+  }
+}
+
+
+@media screen and (max-width: 360px){
+  .input-group{
+    flex-direction: column;
+    align-items: start;
+    gap: 1em;
+  }
+
+  .input-item {
+    width: 100%;
+  }
+
+  .input-item input{
+    font-size: 18px;
+  }
+  .year-result h2,
+  .month-result h2,
+  .days-result h2 {
+    font-size: 35px;
+  }
 }
