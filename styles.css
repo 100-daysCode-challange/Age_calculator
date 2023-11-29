@@ -108,6 +108,11 @@ hr.solid {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border: none;
+}
+
+.icon:hover{
+  background-color: var(--Off-black);
 }
 
 .age-result {
