@@ -1,50 +1,98 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    position: relative;
-    background-color: lightgray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
+:root {
+  /* Primary colors */
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+
+  /* Neutral colors */
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+
+
+  /* Font size */
+  --Font-size-inputs: 32px;
+
+  /* Font family */
+  --font-family: 'Poppins', sans-serif;
+
+  /* Font weigths */
+  --Regular-Italic: 400;
+  --Bold: 700;
+  --ExtraBold-Italic: 800; 
 }
 
-.main-container{
-    background-color: #fff;
-    width: 100%;
-    max-width: 800px;
-    height: auto;
+body {
+  position: relative;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 }
 
-.input-group{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
+.main-container {
+  background-color: #fff;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
 }
 
-.input-item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    padding: 1em;
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
 }
 
-.input-item span{
-    padding-bottom: .5em;
-    text-transform: uppercase;
-    font-size: 16px;
+.input-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 1em;
 }
 
-.input-item input{
-    padding: 15px;
-    width: 60%;
-    font-size: 24px;
-    font-weight: bold;
+.input-item span {
+  padding-bottom: 0.5em;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.input-item input {
+  padding: 15px;
+  width: 60%;
+  font-size: 24px;
+  font-weight: bold;
+}
+.divider {
+  padding: 1em;
+}
+hr.solid {
+  border-top: 1px solid #bbb;
+}
+
+.age-result {
+  padding: 1em;
+  width: 100%;
+}
+
+.year-result,
+.month-result,
+.days-result {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1em;
+}
+
+.age-result span {
 }
