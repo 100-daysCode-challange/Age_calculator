@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no "/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,17 +17,17 @@
       <div class="input-group">
         <div class="input-item">
           <p>Day</p>
-          <input id="dayInput" type="number" placeholder="DD" required />
+          <input id="dayInput" type="number" placeholder="DD" role="input" required />
           <p class="error">This feild is required</p>
         </div>
         <div class="input-item">
           <p>Month</p>
-          <input id="monthInput" type="number" placeholder="MM" required />
+          <input id="monthInput" type="number" placeholder="MM" role="input" required />
           <p class="error">This feild is required</p>
         </div>
         <div class="input-item">
           <p>Year</p>
-          <input id="yearInput" type="number" placeholder="YYYY" required />
+          <input id="yearInput" type="number" placeholder="YYYY" role="input" required />
           <p class="error">This feild is required</p>
         </div>
       </div>
@@ -39,15 +39,15 @@
       </div>
       <div class="age-result">
         <div class="year-result">
-          <p id="yearsSpan">- -</p>
+          <p id="yearsSpan" role="text">- -</p>
           <h2>Years</h2>
         </div>
         <div class="month-result">
-          <p id="monthsSpan">- -</p>
+          <p id="monthsSpan" role="text">- -</p>
           <h2>months</h2>
         </div>
         <div class="days-result">
-          <p id="daysSpan">- -</p>
+          <p id="daysSpan" role="text">- -</p>
           <h2>days</h2>
         </div>
       </div>
