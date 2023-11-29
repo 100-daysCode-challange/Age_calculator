@@ -67,6 +67,7 @@ body {
   padding-bottom: 0.5em;
   text-transform: uppercase;
   font-size: 16px;
+  color: var(--Smokey-grey);
 }
 
 .input-item input {
