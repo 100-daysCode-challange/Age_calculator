@@ -17,37 +17,37 @@
       <div class="input-group">
         <div class="input-item">
           <span>Day</span>
-          <input type="number" placeholder="DD" />
+          <input id="dayInput" type="number" placeholder="DD" required />
           <p class="error">This feild is required</p>
         </div>
         <div class="input-item">
           <span>Month</span>
-          <input type="number" placeholder="MM"/>
+          <input id="monthInput" type="number" placeholder="MM" required />
           <p class="error">This feild is required</p>
         </div>
         <div class="input-item">
           <span>Year</span>
-          <input type="number" placeholder="YYYY"/>
+          <input id="yearInput" type="number" placeholder="YYYY" required />
           <p class="error">This feild is required</p>
         </div>
       </div>
       <div class="divider">
         <hr class="solid" />
-        <div class="icon">
+        <button class="icon" id="button">
           <img src="/images/icon-arrow.svg" alt="" />
-        </div>
+        </button>
       </div>
       <div class="age-result">
         <div class="year-result">
-          <span>- -</span>
+          <span id="yearsSpan">- -</span>
           <h2>Years</h2>
         </div>
         <div class="month-result">
-          <span>- -</span>
+          <span id="monthsSpan">- -</span>
           <h2>months</h2>
         </div>
         <div class="days-result">
-          <span>- -</span>
+          <span id="daysSpan">- -</span>
           <h2>days</h2>
         </div>
       </div>
